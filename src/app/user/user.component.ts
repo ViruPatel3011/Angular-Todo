@@ -8,12 +8,10 @@ import {
   output,
 } from '@angular/core';
 import { type User } from './user.model';
-import { CardComponent } from "../shared/card/card.component";
 
 @Component({
   selector: 'app-user',
-  standalone: true,
-  imports: [CardComponent],
+  standalone: false, // We can also remove this line
   templateUrl: './user.component.html',
   styleUrl: './user.component.css',
 })
